@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>김창희 - 자기소개 홈페이지</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #FFF9E6;
+        }
+        .header {
+            background-color: #FFD93D;
+            color: #333;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 180px;
+            height: 220px;
+            object-fit: cover;
+            border: 5px solid black;
+            margin-right: 40px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        .header-text {
+            text-align: left;
+        }
+        .header-text h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header-text p {
+            margin: 10px 0 0 0;
+            font-size: 20px;
+        }
+        .container {
+            background-color: #FFF9E6;
+            width: 100%;
+            padding: 50px 100px;
+            box-sizing: border-box;
+        }
+        h2 {
+            color: #222;
+            margin-top: 50px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background-color: #e6f3ff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .project-card b {
+            font-size: 18px;
+            color: #333;
+        }
+        .skills-graph {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 40px;
+            margin-top: 30px;
+            height: 250px;
+        }
+        .skill-bar-vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+        }
+        .bar-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .bar-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #cce6ff;
+        }
+        .label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="프로필사진.jpg" alt="프로필사진" class="profile-pic">
+        <div class="header-text">
+            <h1>김창희</h1>
+            <p>한남대학교 20252204</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>소개</h2>
+            <p>한남대학교 1학년 김창희</p>
+
+            <h2>희망 직무</h2>
+            <p>웹 개발자</p>
+
+            <h2>프로젝트</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <b>고양이와 수프 게임</b><br><br>
+                    고양이를 조작하여 수프를 먹으며 점수를 얻는 게임입니다. C로 개발하였습니다.
+                </div>
+
+                <div class="project-card">
+                    <b>(예정) 개인 블로그 제작 프로젝트</b><br><br>
+                    HTML, CSS, JavaScript를 활용하여 블로그 플랫폼 제작. 글 작성, 댓글 기능, 관리자 페이지 포함 예정.
+                </div>
+
+                <div class="project-card">
+                    <b>(예정) 간단한 쇼핑몰 웹사이트</b><br><br>
+                    제품 목록, 장바구니, 회원가입, 결제 기능 등을 포함한 쇼핑몰 웹사이트 구축 예정.
+                </div>
+
+                <div class="project-card">
+                    <b>(예정) 포트폴리오 사이트 제작</b><br><br>
+                    본인의 이력과 프로젝트를 정리하는 포트폴리오 사이트 제작 및 깃허브 페이지 배포 예정.
+                </div>
+
+                <div class="project-card">
+                    <b>(예정) 채팅 웹 애플리케이션 제작</b><br><br>
+                    실시간 채팅 기능이 포함된 간단한 웹 기반 메신저 앱 개발 예정.
+                </div>
+            </div>
+
+            <h2>기술</h2>
+
+            <div class="skills-graph">
+                <div class="skill-bar-vertical">
+                    <div class="bar-wrapper">
+                        <div class="bar-fill" style="height: 20%;"></div>
+                    </div>
+                    <div class="label">Java</div>
+                </div>
+                <div class="skill-bar-vertical">
+                    <div class="bar-wrapper">
+                        <div class="bar-fill" style="height: 25%;"></div>
+                    </div>
+                    <div class="label">C</div>
+                </div>
+                <div class="skill-bar-vertical">
+                    <div class="bar-wrapper">
+                        <div class="bar-fill" style="height: 5%;"></div>
+                    </div>
+                    <div class="label">C++</div>
+                </div>
+                <div class="skill-bar-vertical">
+                    <div class="bar-wrapper">
+                        <div class="bar-fill" style="height: 0%;"></div>
+                    </div>
+                    <div class="label">Python</div>
+                </div>
+                <div class="skill-bar-vertical">
+                    <div class="bar-wrapper">
+                        <div class="bar-fill" style="height: 0%;"></div>
+                    </div>
+                    <div class="label">Linux</div>
+                </div>
+            </div>
+
+            <h2>연락처</h2>
+            <ul>
+                <li>Email: rambocar66@gmail.com</li>
+                <li>Phone: 010-7280-4717</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
